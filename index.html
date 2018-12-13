@@ -130,7 +130,7 @@
 			<div class="owl-carousel owl-theme home_slider">
 
 				<!-- Slider Item -->
-				<div class="owl-item home_slider_item">
+				<div id="owl-item" class="owl-item home_slider_item">
 					<!-- Image by https://unsplash.com/@anikindimitry -->
 					<div class="home_slider_background" style="background-image:url(images/home_slider.jpg)"></div>
 
@@ -190,7 +190,7 @@
 			</div>
 			
 			<!-- Home Slider Nav - Next -->
-			<div class="home_slider_nav home_slider_next">
+			<div id="component-view" class="home_slider_nav home_slider_next">
 				<svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 				width="28px" height="33px" viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
 					<defs>
@@ -236,7 +236,7 @@
 
 					<div class="search_tabs_container">
 						<div class="search_tabs d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
-							<div class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/suitcase.png" alt=""><span>hotels</span></div>
+							<div onclick="scrollComponentView();" class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/suitcase.png" alt=""><span>hotels</span></div>
 							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/bus.png" alt="">car rentals</div>
 							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/departure.png" alt="">flights</div>
 							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/island.png" alt="">trips</div>
@@ -1284,6 +1284,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
 <script src="plugins/easing/easing.js"></script>
 <script src="js/custom.js"></script>
+
+<script type="application/javascript">
+	function scrollComponentView() {
+        document.getElementById("component-view").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    }
+</script>
 
 </body>
 
