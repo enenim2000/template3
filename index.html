@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Travelix</title>
+<title>CurexZone</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Travelix Project">
+<meta name="description" content="CurexZone Project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -42,7 +42,8 @@
 						</div>
 						<div class="user_box ml-auto">
 							<div class="user_box_login user_box_link"><a href="#">login</a></div>
-							<div class="user_box_register user_box_link"><a href="#">register</a></div>
+							<div class="user_box_login user_box_link"><a href="#">register</a></div>
+							<div class="user_box_register user_box_link"><a href="#">dashboard</a></div>
 						</div>
 					</div>
 				</div>
@@ -56,7 +57,7 @@
 				<div class="row">
 					<div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
 						<div class="logo_container">
-							<div class="logo"><a href="#"><img src="images/logo.png" alt="">travelix</a></div>
+							<div class="logo"><a href="#"><img src="images/logo.png" alt="">CurexZone</a></div>
 						</div>
 						<div class="main_nav_container ml-auto">
 							<ul class="main_nav_list">
@@ -224,10 +225,10 @@
 	<!-- Search -->
 
 	<div class="search">
-		
+
 
 		<!-- Search Contents -->
-		
+
 		<div class="container fill_height">
 			<div class="row fill_height">
 				<div class="col fill_height">
@@ -236,13 +237,13 @@
 
 					<div class="search_tabs_container">
 						<div class="search_tabs d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
-							<div onclick="scrollComponentView();" class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/suitcase.png" alt=""><span>hotels</span></div>
-							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/bus.png" alt="">car rentals</div>
-							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/departure.png" alt="">flights</div>
-							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/island.png" alt="">trips</div>
-							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/cruise.png" alt="">cruises</div>
-							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/diving.png" alt="">activities</div>
-						</div>		
+							<div onclick="scrollComponentView();" class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/suitcase.png" alt=""><span>Transfer</span></div>
+							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/bus.png" alt="">Exhange</div>
+							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/departure.png" alt="">Negotiate</div>
+							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/island.png" alt="">Bitcoin</div>
+							<!--<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/cruise.png" alt="">cruises</div>-->
+							<!--<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/diving.png" alt="">activities</div>-->
+						</div>
 					</div>
 
 					<!-- Search Panel -->
@@ -250,34 +251,41 @@
 					<div class="search_panel active">
 						<form action="#" id="search_form_1" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
 							<div class="search_item">
-								<div>destination</div>
-								<input type="text" class="destination search_input" required="required">
-							</div>
-							<div class="search_item">
-								<div>check in</div>
-								<input type="text" class="check_in search_input" placeholder="YYYY-MM-DD">
-							</div>
-							<div class="search_item">
-								<div>check out</div>
-								<input type="text" class="check_out search_input" placeholder="YYYY-MM-DD">
-							</div>
-							<div class="search_item">
-								<div>adults</div>
-								<select name="adults" id="adults_1" class="dropdown_item_select search_input">
-									<option>01</option>
-									<option>02</option>
-									<option>03</option>
+								<div>source currency</div>
+								<select name="transfer_source" id="transfer_source" class="dropdown_item_select search_input">
+									<option>Naira</option>
+									<option>Pounds</option>
+									<option>Dollar</option>
+									<option>Euros</option>
 								</select>
 							</div>
 							<div class="search_item">
-								<div>children</div>
-								<select name="children" id="children_1" class="dropdown_item_select search_input">
-									<option>0</option>
-									<option>02</option>
-									<option>03</option>
+								<div>destination currency</div>
+								<select name="transfer_destination" id="transfer_destination" class="dropdown_item_select search_input">
+									<option>Naira</option>
+									<option>Pounds</option>
+									<option>Dollar</option>
+									<option>Euros</option>
 								</select>
 							</div>
-							<button class="button search_button">search<span></span><span></span><span></span></button>
+							<div class="search_item">
+								<div>amount</div>
+								<input type="text" name="transfer_amount" class="check_out search_input" placeholder="Amount">
+							</div>
+							<!--<div class="search_item">
+								<div>source account</div>
+								<select name="transfer_source_account" id="transfer_source_account" class="dropdown_item_select search_input">
+									<option># 0178650785</option>
+									<option># 9098833845</option>
+								</select>
+							</div>
+							<div class="search_item">
+								<div>destination account</div>
+								<select name="transfer_destination_account" id="transfer_destination_account" class="dropdown_item_select search_input">
+									<option>$ 8943773092</option>
+								</select>
+							</div>-->
+							<button class="button search_button">Proceed<span></span><span></span><span></span></button>
 						</form>
 					</div>
 
@@ -462,7 +470,7 @@
 					</div>
 				</div>
 			</div>
-		</div>		
+		</div>
 	</div>
 
 	<!-- Intro -->
@@ -1146,7 +1154,7 @@
 					<div class="footer_col">
 						<div class="footer_content footer_about">
 							<div class="logo_container footer_logo">
-								<div class="logo"><a href="#"><img src="images/logo.png" alt="">travelix</a></div>
+								<div class="logo"><a href="#"><img src="images/logo.png" alt="">CurexZone</a></div>
 							</div>
 							<p class="footer_about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer eleme ntum orci eu vehicula pretium.</p>
 							<ul class="footer_social_list">
