@@ -13,6 +13,7 @@
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 
 <body>
@@ -239,53 +240,43 @@
 						<div class="search_tabs d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
 							<div onclick="scrollComponentView();" class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/suitcase.png" alt=""><span>Transfer</span></div>
 							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/bus.png" alt="">Exchange</div>
-							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/departure.png" alt="">Negotiate</div>
-							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/island.png" alt="">Bitcoin</div>
-							<!--<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/cruise.png" alt="">cruises</div>-->
-							<!--<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/diving.png" alt="">activities</div>-->
+							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/departure.png" alt="">Merchants</div>
+							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/island.png" alt="">Trade By Barter</div>
+							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/cruise.png" alt="">Blockchain</div>
 						</div>
 					</div>
+
 
 					<!-- Search Panel -->
 
 					<div class="search_panel active">
-						<form action="#" id="search_form_1" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
-							<div class="search_item">
-								<div>source</div>
-								<select name="transfer_source" id="transfer_source" class="dropdown_item_select search_input">
-									<option>Naira</option>
-									<option>Pounds</option>
+
+						<form action="#" autocomplete="off" id="search_form_1" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
+							<div class="search_item" style="width: 25%;">
+								<div>Source Currency</div>
+								<select name="source_currency" id="source_currency" class="dropdown_item_select search_input">
 									<option>Dollar</option>
+									<option>Pounds</option>
+									<option>Naira</option>
 									<option>Euros</option>
 								</select>
 							</div>
-							<div class="search_item">
-								<div>destination</div>
-								<select name="transfer_destination" id="transfer_destination" class="dropdown_item_select search_input">
-									<option>Naira</option>
-									<option>Pounds</option>
+
+							<div class="search_item" style="width: 25%;">
+								<div>Destination Currency</div>
+								<select name="destination_currency" id="destination_currency" class="dropdown_item_select search_input">
 									<option>Dollar</option>
+									<option>Pounds</option>
+									<option>Naira</option>
 									<option>Euros</option>
 								</select>
 							</div>
-							<div class="search_item">
-								<div>amount</div>
-								<input type="text" name="transfer_amount" class="check_out search_input" placeholder="Amount">
+
+							<div class="search_item" style="width: 25%;">
+								<div>Amount ($)</div>
+								<input id="amount" type="text" class="amount search_input" placeholder="Amount">
 							</div>
-							<div class="search_item">
-								<div>source account</div>
-								<select name="transfer_source_account" id="transfer_source_account" class="dropdown_item_select search_input">
-									<option># 0178650785</option>
-									<option># 9098833845</option>
-								</select>
-							</div>
-							<div class="search_item">
-								<div>destination account</div>
-								<select name="transfer_destination_account" id="transfer_destination_account" class="dropdown_item_select search_input">
-									<option>$ 8943773092</option>
-								</select>
-							</div>
-							<button class="button search_button">Proceed<span></span><span></span><span></span></button>
+							<button class="button search_button">PROCEED<span></span><span></span><span></span></button>
 						</form>
 					</div>
 
@@ -397,77 +388,7 @@
 						</form>
 					</div>
 
-					<!-- Search Panel -->
 
-					<div class="search_panel">
-						<form action="#" id="search_form_5" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
-							<div class="search_item">
-								<div>destination</div>
-								<input type="text" class="destination search_input" required="required">
-							</div>
-							<div class="search_item">
-								<div>check in</div>
-								<input type="text" class="check_in search_input" placeholder="YYYY-MM-DD">
-							</div>
-							<div class="search_item">
-								<div>check out</div>
-								<input type="text" class="check_out search_input" placeholder="YYYY-MM-DD">
-							</div>
-							<div class="search_item">
-								<div>adults</div>
-								<select name="adults" id="adults_5" class="dropdown_item_select search_input">
-									<option>01</option>
-									<option>02</option>
-									<option>03</option>
-								</select>
-							</div>
-							<div class="search_item">
-								<div>children</div>
-								<select name="children" id="children_5" class="dropdown_item_select search_input">
-									<option>0</option>
-									<option>02</option>
-									<option>03</option>
-								</select>
-							</div>
-							<button class="button search_button">search<span></span><span></span><span></span></button>
-						</form>
-					</div>
-
-					<!-- Search Panel -->
-
-					<div class="search_panel">
-						<form action="#" id="search_form_6" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
-							<div class="search_item">
-								<div>destination</div>
-								<input type="text" class="destination search_input" required="required">
-							</div>
-							<div class="search_item">
-								<div>check in</div>
-								<input type="text" class="check_in search_input" placeholder="YYYY-MM-DD">
-							</div>
-							<div class="search_item">
-								<div>check out</div>
-								<input type="text" class="check_out search_input" placeholder="YYYY-MM-DD">
-							</div>
-							<div class="search_item">
-								<div>adults</div>
-								<select name="adults" id="adults_6" class="dropdown_item_select search_input">
-									<option>01</option>
-									<option>02</option>
-									<option>03</option>
-								</select>
-							</div>
-							<div class="search_item">
-								<div>children</div>
-								<select name="children" id="children_6" class="dropdown_item_select search_input">
-									<option>0</option>
-									<option>02</option>
-									<option>03</option>
-								</select>
-							</div>
-							<button class="button search_button">search<span></span><span></span><span></span></button>
-						</form>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -843,7 +764,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col text-center">
-					<h2 class="section_title">what our clients say about us</h2>
+					<h2 class="section_title">Our Services</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -862,29 +783,11 @@
 									<div class="test_content_container">
 										<div class="test_content">
 											<div class="test_item_info">
-												<div class="test_name">carla smith</div>
-												<div class="test_date">May 24, 2017</div>
+												<div class="test_name">Fund Transfer</div>
+												<div class="test_date">Instant, Secure, Reliable</div>
 											</div>
-											<div class="test_quote_title">" Best holliday ever "</div>
-											<p class="test_quote_text">Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Testimonial Item -->
-							<div class="owl-item">
-								<div class="test_item">
-									<div class="test_image"><img src="images/test_2.jpg" alt="https://unsplash.com/@tschax"></div>
-									<div class="test_icon"><img src="images/island_t.png" alt=""></div>
-									<div class="test_content_container">
-										<div class="test_content">
-											<div class="test_item_info">
-												<div class="test_name">carla smith</div>
-												<div class="test_date">May 24, 2017</div>
-											</div>
-											<div class="test_quote_title">" Best holliday ever "</div>
-											<p class="test_quote_text">Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.</p>
+											<div class="test_quote_title">" Instant Fund Transfer "</div>
+											<p class="test_quote_text">You can now transfer fund from one account to another, regardless of the currency. <a class="link" href="#">Terms and conditions</a> apply</p>
 										</div>
 									</div>
 								</div>
@@ -898,11 +801,29 @@
 									<div class="test_content_container">
 										<div class="test_content">
 											<div class="test_item_info">
-												<div class="test_name">carla smith</div>
-												<div class="test_date">May 24, 2017</div>
+												<div class="test_name">Merchants</div>
+												<div class="test_date">Bureau De Change</div>
 											</div>
-											<div class="test_quote_title">" Best holliday ever "</div>
-											<p class="test_quote_text">Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.</p>
+											<div class="test_quote_title">" Sell Currencies "</div>
+											<p class="test_quote_text">You can now sell currencies to clients at your preferred rate and terms, using our reliable platform</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Testimonial Item -->
+							<div class="owl-item">
+								<div class="test_item">
+									<div class="test_image"><img src="images/test_2.jpg" alt="https://unsplash.com/@tschax"></div>
+									<div class="test_icon"><img src="images/island_t.png" alt=""></div>
+									<div class="test_content_container">
+										<div class="test_content">
+											<div class="test_item_info">
+												<div class="test_name">Exchange</div>
+												<div class="test_date">Peer to Peer Exchange</div>
+											</div>
+											<div class="test_quote_title">" Exchange Currencies "</div>
+											<p class="test_quote_text">You can now exchange your currencies with peers at the most affordable rates using our currencies exchange service</p>
 										</div>
 									</div>
 								</div>
@@ -916,11 +837,11 @@
 									<div class="test_content_container">
 										<div class="test_content">
 											<div class="test_item_info">
-												<div class="test_name">carla smith</div>
-												<div class="test_date">May 24, 2017</div>
+												<div class="test_name">BlockChain</div>
+												<div class="test_date">Buying & Selling with Cryptocurrencies</div>
 											</div>
-											<div class="test_quote_title">" Best holliday ever "</div>
-											<p class="test_quote_text">Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.</p>
+											<div class="test_quote_title">" Digital Currency Exchange "</div>
+											<p class="test_quote_text">You can now convert your money to digital currencies (bitcoin, litecoin, etc), via out digital currencies service</p>
 										</div>
 									</div>
 								</div>
@@ -934,29 +855,11 @@
 									<div class="test_content_container">
 										<div class="test_content">
 											<div class="test_item_info">
-												<div class="test_name">carla smith</div>
-												<div class="test_date">May 24, 2017</div>
+												<div class="test_name">Trade by Barter</div>
+												<div class="test_date">Goods Exchange</div>
 											</div>
-											<div class="test_quote_title">" Best holliday ever "</div>
-											<p class="test_quote_text">Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Testimonial Item -->
-							<div class="owl-item">
-								<div class="test_item">
-									<div class="test_image"><img src="images/test_3.jpg" alt=""></div>
-									<div class="test_icon"><img src="images/kayak.png" alt=""></div>
-									<div class="test_content_container">
-										<div class="test_content">
-											<div class="test_item_info">
-												<div class="test_name">carla smith</div>
-												<div class="test_date">May 24, 2017</div>
-											</div>
-											<div class="test_quote_title">" Best holliday ever "</div>
-											<p class="test_quote_text">Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.</p>
+											<div class="test_quote_title">"Trade with Goods"</div>
+											<p class="test_quote_text">Do you have something other than money to exchange? Then let us help you connect with others</p>
 										</div>
 									</div>
 								</div>
