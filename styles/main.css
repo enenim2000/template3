@@ -7,3 +7,14 @@ a.link:hover{
 	background: transparent;
 	color: #fa9e1c;
 }
+
+a.learn-more{
+	background: transparent;
+	color: #fa9e1c;
+	text-decoration: none;
+}
+
+a.learn-more:hover{
+	background: transparent;
+	color: #fa9e1c;
+}
