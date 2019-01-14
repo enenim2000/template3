@@ -1153,8 +1153,8 @@ section
 .intro
 {
 	width: 100%;
-	padding-top: 100px;
-	padding-bottom: 105px;
+	padding-top: 50px;
+	padding-bottom: 65px;
 }
 .intro_title
 {
@@ -1685,12 +1685,12 @@ section
 .trending
 {
 	width: 100%;
-	padding-top: 105px;
+	padding-top: 55px;
 	padding-bottom: 50px;
 }
 .trending_container
 {
-	margin-top: 90px;
+	margin-top: 40px;
 }
 .trending_item
 {

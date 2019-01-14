@@ -7,3 +7,18 @@ a.link:hover{
 	background: transparent;
 	color: #fa9e1c;
 }
+
+a.learn-more{
+	background: transparent;
+	color: #fa9e1c;
+	text-decoration: none;
+}
+
+a.learn-more:hover{
+	background: transparent;
+	color: #fa9e1c;
+}
+
+div.load-more{
+	background: rgba(54, 19, 84, 0.2);
+}
