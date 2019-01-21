@@ -2,7 +2,7 @@
  * CONFIG PARAMETERS
  */
 
-var APP_NAME = "CurexZone";
+var APP_NAME = "CureXzone";
 
 
 

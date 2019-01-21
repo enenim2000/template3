@@ -1,0 +1,109 @@
+
+body, div.container-fluid, div#main-container, div.content-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+
+div.content-wrapper-parent{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+div.content-wrapper{
+    background: white;
+    border: 1px solid #0e9cd6;
+    min-height: 200px;
+    border-radius: 2px;
+}
+
+form.form-wrapper{
+    padding-top: 10px;
+    padding-bottom: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn-submit, div#redirect-section div button {
+    background-color: #0e75a5;
+    font-size: 13px;
+    font-weight: bold;
+    width: 100%;
+
+    /* default for <button>, but useful for <a> */
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+
+    /* create a small space when buttons wrap on 2 lines */
+    margin: 2px 0;
+
+    /* invisible border (will be colored on hover/focus) */
+    border: solid 1px transparent;
+    border-radius: 4px;
+
+    /* size comes from text & padding (no width/height) */
+    padding: 0.8em 1em;
+
+    /* make sure colors have enough contrast! */
+    color: #ffffff;
+}
+
+.btn-submit:hover {
+    background-color: #0e699c;
+}
+
+input.input{
+    border: 1px solid #e8e8e8;
+    height: 38px;
+    width: 100%;
+}
+
+div.input-wrap {
+    padding-right: 13px;
+    padding-left: 13px;
+}
+
+input{
+    text-align:center!important;
+}
+
+input.input-pin{
+    height: 35px;
+    width: 100%!important;
+    margin-right: 0!important;
+    margin-left: 0!important;
+    padding-right: 0!important;
+    padding-left: 0!important;
+    border: 1px solid #e8e8e8;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+div.div-pin > div{
+    float: left!important;
+}
+
+.loading-indicator{
+    background-color: transparent!important;
+    top: 35vh;
+    z-index: 999;
+    position: fixed;
+    right: 45vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .container-fluid {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 479px){
+    .container-fluid {
+        text-align: center;
+    }
+}
