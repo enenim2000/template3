@@ -23,10 +23,10 @@
 <div class="container-fluid">
 
 	<div class="row">
-		<span class="loading-indicator" style="display: block;"><img width="95" height="95" src="popup/img/ajax_loader_blue_128.gif"/></span>
+		<span class="loading-indicator" style="display: none;"><img width="95" height="95" src="popup/img/ajax_loader_blue_128.gif"/></span>
 	</div>
 
-	<div class="row" id="main-container" style="display: none;">
+	<div class="row animated" id="main-container" style="display: block;">
 
 		<div class="col col-sm-3"></div>
 
@@ -35,7 +35,7 @@
 
 				<div class="col col-sm-3"></div>
 
-				<div class="content-wrapper col col-sm-6" style="display: none;">
+				<div class="content-wrapper col col-sm-6" style="display: block;">
 					<form id="form-wrapper-id" class="animated slideInUp form-wrapper" style="display: block;">
 
 						<div class="logo">
@@ -43,10 +43,10 @@
 						</div>
 
 						<div class="logo" style="font-weight: bold;">
-							<h3 style="color: #0e7d4f;">&#8358;</h3><h3 id="amountLabel" style="color: #0885bf;"></h3>
+							<h3 style="color: #0e7d4f;">&#8358;</h3><h3 id="amountLabel" style="color: #0885bf;">50,000</h3>
 						</div>
 
-						<div id="pin" class="animated slideInUp form-group step" style="display: none;">
+						<div id="pin" class="animated slideInUp form-group step" style="display: block;">
 							<div class="logo">
 								<label style="color:#0e8ac3;">Enter your card pin</label>
 							</div>
@@ -59,7 +59,7 @@
 							</div>
 						</div>
 
-						<div id="phone" class="animated slideInUp form-group row step" style="display: none;">
+						<div id="phone" class="animated slideInUp form-group row step" style="display: block;">
 							<div class="logo">
 								<label style="color:#0e8ac3;">Phone Number</label>
 							</div>
@@ -69,7 +69,7 @@
 							</div>
 						</div>
 
-						<div id="otp" class="animated slideInUp form-group row step" style="display: none;">
+						<div id="otp" class="animated slideInUp form-group row step" style="display: block;">
 							<div class="logo">
 								<label style="color:#0e8ac3;">OTP</label>
 							</div>
@@ -79,7 +79,7 @@
 							</div>
 						</div>
 
-						<div id="action-button" class="animated slideInUp form-group row step" style="display: none;">
+						<div id="action-button" class="animated slideInUp form-group row step" style="display: block;">
 							<div class="logo input-wrap">
 								<button type="submit" class="btn-submit">PROCEED</button>
 							</div>
