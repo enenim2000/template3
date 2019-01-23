@@ -26,7 +26,19 @@ form.form-wrapper{
 }
 
 .btn-submit, div#redirect-section div button {
-    background: linear-gradient(to right, #8d4fff, #fa9e1b);
+
+    background: linear-gradient(to right, #fa9e1b, #8d4fff, #fa9e1b);
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+
+
+
+
+
+
     font-size: 13px;
     font-weight: bold;
     width: 100%;
@@ -51,7 +63,12 @@ form.form-wrapper{
 }
 
 .btn-submit:hover {
-    background: linear-gradient(to right, #fa9e1b, #8d4fff);
+    background: linear-gradient(to right, #8d4fff, #fa9e1b, #8d4fff);
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
 }
 
 input.input{
