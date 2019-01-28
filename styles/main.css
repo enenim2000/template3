@@ -22,3 +22,22 @@ a.learn-more:hover{
 div.load-more{
 	background: rgba(54, 19, 84, 0.2);
 }
+
+.modal-overlay{
+	width: 100%;
+	height: 100%;
+	left:0;
+	top:1px;
+	overflow:hidden;
+	background: rgba(0, 0, 0, .6) !important;
+	text-align: center;
+	color: rgb(239, 195, 55);
+	display:none;
+	position: fixed;
+	padding-top: 30px;
+	z-index: 99999999999;
+}
+
+#noty_topRight_layout_container{
+	z-index:9999999999999999999999999999999999999 !important;
+}
