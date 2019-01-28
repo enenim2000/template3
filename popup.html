@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>cureXzone</title>
+	<meta charset="UTF-8"/>
+	<title>cureXzone</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=9, IE=11, IE=edge, chrome=1"/>
+	<meta http-equiv="Pragma" content="none"/>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<link rel="icon" type="image/png" href="popup/img/favicon.png"/>
+	<link rel="stylesheet" type="text/css" href="popup/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="popup/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="popup/css/animate.css"/>
+	<link rel="stylesheet" type="text/css" href="popup/css/custom.css"/>
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+	<div class="row">
+		<span class="loading-indicator" style="display: none;"><img width="95" height="95" src="popup/img/ajax_loader_blue_128.gif"/></span>
+	</div>
+
+	<div class="row animated" id="main-container" style="display: block;">
+
+		<div class="col col-sm-3"></div>
+
+		<div class="col col-sm-6">
+			<div class="row content-wrapper-parent">
+
+				<div class="col col-sm-3"></div>
+
+				<div class="content-wrapper col col-sm-6" style="display: block;">
+					<form id="form-wrapper-id" class="animated slideInUp form-wrapper" style="display: block;">
+
+						<div class="logo">
+							<span><img src="popup/img/etranzact-logo.png"/></span>
+						</div>
+
+						<div class="logo" style="font-weight: bold;">
+							<h3 style="color: #0e7d4f;">&#8358;</h3><h3 id="amountLabel" style="color: #8d4fff;">50,000</h3>
+						</div>
+
+						<div id="pin" class="animated slideInUp form-group step" style="display: block;">
+							<div class="logo">
+								<label style="color:#8d4fff;">Enter your card pin</label>
+							</div>
+
+							<div class="div-pin logo">
+								<div><input class="input-pin" maxlength="1" type="password" placeholder=""/></div>
+								<div><input class="input-pin" maxlength="1" type="password" placeholder=""/></div>
+								<div><input class="input-pin" maxlength="1" type="password" placeholder=""/></div>
+								<div><input class="input-pin" maxlength="1" type="password" placeholder=""/></div>
+							</div>
+						</div>
+
+						<div id="phone" class="animated slideInUp form-group row step" style="display: block;">
+							<div class="logo">
+								<label style="color:#8d4fff;">Phone Number</label>
+							</div>
+
+							<div class="logo input-wrap">
+								<input name="phone" class="input input-wrap input-phone" placeholder="Enter your phone number"/>
+							</div>
+						</div>
+
+						<div id="otp" class="animated slideInUp form-group row step" style="display: block;">
+							<div class="logo">
+								<label style="color:#8d4fff;">OTP</label>
+							</div>
+
+							<div class="logo input-wrap">
+								<input name="otp" maxlength="6" type="password" class="input input-otp" placeholder="Enter OTP"/>
+							</div>
+						</div>
+
+						<div id="action-button" class="animated slideInUp form-group row step" style="display: block;">
+							<div class="logo input-wrap">
+								<button type="submit" class="btn-submit">PROCEED</button>
+							</div>
+						</div>
+
+						<div id="success-section" class="animated zoomIn form-group row step" style="display: none;">
+							<div class="logo">
+								<img src="popup/img/checkmark.png"/>
+							</div>
+							<div class="logo">
+								<label style="color:#178543;">Payment Successful</label>
+							</div>
+						</div>
+
+						<div id="redirect-section" class="form-group row step" style="display: none;">
+							<div class="logo input-wrap">
+								<button>Redirecting<span class="dots"></span></button>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="col col-sm-3"></div>
+
+			</div>
+		</div>
+
+		<div class="col col-sm-3"></div>
+
+	</div>
+
+</div>
+
+<footer>
+	<script src="popup/lib/jquery/jquery.min.js" type="text/javascript"></script>
+	<script src="popup/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="popup/lib/noty/jquery.noty.packaged.min.js" type="text/javascript"></script>
+	<script src="popup/lib/js-base64/base64.min.js" type="text/javascript"></script>
+	<script src="popup/lib/animation/dot-animation.js" type="text/javascript"></script>
+	<script src="popup/js/custom/rest-service.js" type="text/javascript"></script>
+	<script src="popup/js/custom/main.js" type="text/javascript"></script>
+</footer>
+
+</body>
+</html>
