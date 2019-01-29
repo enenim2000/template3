@@ -1,7 +1,7 @@
 
 body, div.container-fluid, div#main-container, div.content-wrapper{
     position: relative;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 
@@ -12,7 +12,7 @@ div.content-wrapper-parent{
 
 
 div.content-wrapper{
-    background: white;
+    background: transparent;
     border: 1px solid #8d4fff;
     min-height: 200px;
     border-radius: 2px;
