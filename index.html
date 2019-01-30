@@ -1362,8 +1362,92 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 </div>
 
 
-
 <div class="modal-overlay animated" style="margin-right: 0;">
+
+	<div class="row">
+
+		<div class="col col-sm-3"></div>
+
+		<div class="col col-sm-6">
+
+			<div class="row content-wrapper-parent">
+				<div class="col col-sm-3"></div>
+
+				<div id="frame-container" class="col col-sm-6" style="display: block;">
+					<form id="form-wrapper-id" class="animated slideInUp form-wrapper" style="display: block; background: #ffffff; padding: 10px 15px 1px 15px;">
+
+						<div class="logo">
+							<span><img src="popup/img/etranzact-logo.png"/></span>
+						</div>
+
+						<div class="logo" style="font-weight: bold;">
+							<h3 style="color: #0e7d4f;">&#8358;</h3><h3 id="amountLabel" style="color: #8d4fff;">50,000</h3>
+						</div>
+
+						<div id="pin" class="animated slideInUp form-group step" style="display: block;">
+							<div class="logo">
+								<label style="color:#8d4fff;">Enter your card pin</label>
+							</div>
+
+							<div class="div-pin logo">
+								<div><input class="input-pin" maxlength="1" type="password" placeholder=""/></div>
+								<div><input class="input-pin" maxlength="1" type="password" placeholder=""/></div>
+								<div><input class="input-pin" maxlength="1" type="password" placeholder=""/></div>
+								<div><input class="input-pin" maxlength="1" type="password" placeholder=""/></div>
+							</div>
+						</div>
+
+						<div id="phone" class="animated slideInUp form-group row step" style="display: block;">
+							<div class="logo">
+								<label style="color:#8d4fff;">Phone Number</label>
+							</div>
+
+							<div class="logo input-wrap">
+								<input name="phone" class="input input-wrap input-phone" placeholder="Enter your phone number"/>
+							</div>
+						</div>
+
+						<div id="otp" class="animated slideInUp form-group row step" style="display: block;">
+							<div class="logo">
+								<label style="color:#8d4fff;">OTP</label>
+							</div>
+
+							<div class="logo input-wrap">
+								<input name="otp" maxlength="6" type="password" class="input input-otp" placeholder="Enter OTP"/>
+							</div>
+						</div>
+
+						<div id="action-button" class="animated slideInUp form-group row step" style="display: block;">
+							<div class="logo input-wrap">
+								<button type="submit" class="btn-submit">PROCEED</button>
+							</div>
+						</div>
+
+						<div id="success-section" class="animated zoomIn form-group row step" style="display: none;">
+							<div class="logo">
+								<img src="popup/img/checkmark.png"/>
+							</div>
+							<div class="logo">
+								<label style="color:#178543;">Payment Successful</label>
+							</div>
+						</div>
+
+						<div id="redirect-section" class="form-group row step" style="display: none;">
+							<div class="logo input-wrap">
+								<button>Redirecting<span class="dots"></span></button>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="col col-sm-3"></div>
+
+			</div>
+		</div>
+
+		<div class="col col-sm-3"></div>
+
+	</div>
 
 </div>
 
@@ -1394,17 +1478,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script type="application/javascript">
 	$(".login-action").click(function () {
 		$(".modal-overlay").addClass("modal-active");
-
-        var frame = document.createElement('iframe');
+        /*var frame = document.createElement('iframe');
         frame.setAttribute('id', 'popup-frame');
-        frame.setAttribute("style", 'width:100% !important; height: 100% !important; overflow:hidden; background: rgba(0,0,0,.6) !important; border:none; z-index: 9999 !important; position: fixed; top:0px; left: 0');
-        frame.setAttribute('width', window.innerWidth);
-        frame.setAttribute('height', window.innerHeight);
+        //frame.setAttribute("style", 'width:100% !important; height: 100% !important; overflow:hidden; background: rgba(0,0,0,.6) !important; border:none; z-index: 9999 !important; position: fixed; top:0px; left: 0');
+        //frame.setAttribute('width', window.innerWidth);
+        //frame.setAttribute('height', window.innerHeight);
         frame.setAttribute('src', "file:///C:/Users/asukwo.enenim/IdeaProjects/template3/popup.html");
         frame.setAttribute('scrolling', "no");
-
-        $(".modal-overlay").append(frame);
-
+        $("#frame-container").append(frame);*/
     });
 </script>
 
