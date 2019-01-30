@@ -60,6 +60,7 @@ form.form-wrapper{
 
     /* make sure colors have enough contrast! */
     color: #ffffff;
+    cursor: pointer;
 }
 
 .btn-submit:hover {

@@ -1362,7 +1362,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 </div>
 
 
-<div class="modal-overlay animated" style="margin-right: 0;">
+<div class="modal-overlay animated" style="margin-right: 0; padding-top: 100px;">
 
 	<div class="row">
 
@@ -1374,7 +1374,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				<div class="col col-sm-3"></div>
 
 				<div id="frame-container" class="col col-sm-6" style="display: block;">
-					<form id="form-wrapper-id" class="animated slideInUp form-wrapper" style="display: block; background: #ffffff; padding: 10px 15px 1px 15px;">
+					<form id="form-wrapper-id" class="animated slideInUp form-wrapper" style="display: block; background: #ffffff; padding: 10px 15px 0 15px; border-radius: 2px;">
 
 						<div class="logo">
 							<span><img src="popup/img/etranzact-logo.png"/></span>
@@ -1417,8 +1417,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 							</div>
 						</div>
 
-						<div id="action-button" class="animated slideInUp form-group row step" style="display: block;">
-							<div class="logo input-wrap">
+						<div id="action-button" class="animated form-group row step" style="display: block;">
+							<div class="logo input-wrap" style="padding-bottom: 10px;">
 								<button type="submit" class="btn-submit">PROCEED</button>
 							</div>
 						</div>
@@ -1469,23 +1469,17 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="popup/js/custom/main.js" type="text/javascript"></script>
 <!-- Modal Popup Scripts Ends-->
 
+
 <script type="application/javascript">
 	function scrollComponentView() {
         document.getElementById("component-view").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
     }
 </script>
 
+
 <script type="application/javascript">
 	$(".login-action").click(function () {
 		$(".modal-overlay").addClass("modal-active");
-        /*var frame = document.createElement('iframe');
-        frame.setAttribute('id', 'popup-frame');
-        //frame.setAttribute("style", 'width:100% !important; height: 100% !important; overflow:hidden; background: rgba(0,0,0,.6) !important; border:none; z-index: 9999 !important; position: fixed; top:0px; left: 0');
-        //frame.setAttribute('width', window.innerWidth);
-        //frame.setAttribute('height', window.innerHeight);
-        frame.setAttribute('src', "file:///C:/Users/asukwo.enenim/IdeaProjects/template3/popup.html");
-        frame.setAttribute('scrolling', "no");
-        $("#frame-container").append(frame);*/
     });
 </script>
 
