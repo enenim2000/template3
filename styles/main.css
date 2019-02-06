@@ -45,3 +45,8 @@ div.load-more{
 #noty_topRight_layout_container{
 	z-index:9999999999999999999999999999999999999 !important;
 }
+
+.modal-bottom-div{
+	text-align: center;
+	padding-bottom: 2px;
+}
