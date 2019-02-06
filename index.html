@@ -51,8 +51,8 @@
 						</div>
 						<div class="user_box ml-auto">
 							<div class="user_box_login user_box_link"><a href="#" class="login-action">login</a></div>
-							<div class="user_box_login user_box_link"><a href="#">register</a></div>
-							<div class="user_box_register user_box_link"><a href="#">dashboard</a></div>
+							<div class="user_box_login user_box_link"><a href="#" class="register-action">register</a></div>
+							<div class="user_box_register user_box_link"><a href="#" class="verify-action">dashboard</a></div>
 						</div>
 					</div>
 				</div>
@@ -1374,19 +1374,99 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				<div class="col col-sm-3"></div>
 
 				<div id="frame-container" class="col col-sm-6" style="display: block;">
-					<form id="form-wrapper-id" class="animated slideInUp form-wrapper" style="display: block; background: rgb(255,255,255); padding: 10px 13px 0 13px; border-radius: 5px; border: 1px solid rgba(141,79,255,0.3);">
+
+					<form id="login-form" class="animated slideInUp form-wrapper" style="display: none; background: rgb(255,255,255); padding: 10px 13px 0 13px; border-radius: 5px; border: 1px solid rgba(141,79,255,0.3);">
 
 						<div class="logo">
 							<span><img src="popup/img/etranzact-logo.png"/></span>
 						</div>
 
-						<div class="logo" style="font-weight: bold;">
-							<h3 style="color: #0e7d4f;">&#8358;</h3><h3 id="amountLabel" style="color: #8d4fff;">50,000</h3>
+						<br/>
+
+						<div id="login-username" class="animated slideInUp form-group row" style="display: block;">
+							<div class="logo">
+								<label style="color:#8d4fff;">Username</label>
+							</div>
+
+							<div class="logo input-wrap">
+								<input name="username" class="input input-wrap" placeholder="Enter username"/>
+							</div>
 						</div>
 
-						<div id="pin" class="animated slideInUp form-group step" style="display: block;">
+						<div id="login-password" class="animated slideInUp form-group row" style="display: block;">
 							<div class="logo">
-								<label style="color:#8d4fff;">Enter your card pin</label>
+								<label style="color:#8d4fff;">Password</label>
+							</div>
+
+							<div class="logo input-wrap">
+								<input name="password" type="password" class="input" placeholder="Enter password"/>
+							</div>
+						</div>
+
+						<div id="login-action-button" class="animated form-group row step" style="display: block;">
+							<div class="logo input-wrap" style="">
+								<button type="submit" class="btn-submit">Login</button>
+							</div>
+						</div>
+					</form>
+
+					<form id="register-form" class="animated slideInUp form-wrapper" style="display: none; background: rgb(255,255,255); padding: 10px 13px 0 13px; border-radius: 5px; border: 1px solid rgba(141,79,255,0.3);">
+
+						<div class="logo">
+							<span><img src="popup/img/etranzact-logo.png"/></span>
+						</div>
+
+						<br/>
+
+						<div id="signup-email" class="animated slideInUp form-group row" style="display: block;">
+							<div class="logo">
+								<label style="color:#8d4fff;">Email</label>
+							</div>
+
+							<div class="logo input-wrap">
+								<input name="email" class="input input-wrap" placeholder="Enter email"/>
+							</div>
+						</div>
+
+						<div id="signup-password" class="animated slideInUp form-group row" style="display: block;">
+							<div class="logo">
+								<label style="color:#8d4fff;">Password</label>
+							</div>
+
+							<div class="logo input-wrap">
+								<input name="password" type="password" class="input" placeholder="Enter password"/>
+							</div>
+						</div>
+
+						<div id="signup-confirm-password" class="animated slideInUp form-group row" style="display: block;">
+							<div class="logo">
+								<label style="color:#8d4fff;">Confirm Password</label>
+							</div>
+
+							<div class="logo input-wrap">
+								<input name="confirm_password" type="password" class="input" placeholder="Enter confirm password"/>
+							</div>
+						</div>
+
+						<div id="signup-action-button" class="animated form-group row" style="display: block;">
+							<div class="logo input-wrap" style="padding-bottom: 0;">
+								<button type="submit" class="btn-submit">Register</button>
+							</div>
+						</div>
+
+					</form>
+
+					<form id="verify-form" class="animated slideInUp form-wrapper" style="display: none; background: rgb(255,255,255); padding: 10px 13px 0 13px; border-radius: 5px; border: 1px solid rgba(141,79,255,0.3);">
+
+						<div class="logo">
+							<span><img src="popup/img/etranzact-logo.png"/></span>
+						</div>
+
+						<br/>
+
+						<div id="pin" class="animated slideInUp form-group" style="display: block;">
+							<div class="logo">
+								<label style="color:#8d4fff;">Enter Verification Code</label>
 							</div>
 
 							<div class="div-pin logo">
@@ -1394,50 +1474,28 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 								<div><input class="input-pin" maxlength="1" type="password" placeholder=""/></div>
 								<div><input class="input-pin" maxlength="1" type="password" placeholder=""/></div>
 								<div><input class="input-pin" maxlength="1" type="password" placeholder=""/></div>
+								<div><input class="input-pin" maxlength="1" type="password" placeholder=""/></div>
+								<div><input class="input-pin" maxlength="1" type="password" placeholder=""/></div>
 							</div>
 						</div>
 
-						<div id="phone" class="animated slideInUp form-group row step" style="display: block;">
-							<div class="logo">
-								<label style="color:#8d4fff;">Phone Number</label>
-							</div>
-
-							<div class="logo input-wrap">
-								<input name="phone" class="input input-wrap input-phone" placeholder="Enter your phone number"/>
-							</div>
-						</div>
-
-						<div id="otp" class="animated slideInUp form-group row step" style="display: block;">
-							<div class="logo">
-								<label style="color:#8d4fff;">OTP</label>
-							</div>
-
-							<div class="logo input-wrap">
-								<input name="otp" maxlength="6" type="password" class="input input-otp" placeholder="Enter OTP"/>
-							</div>
-						</div>
-
-						<div id="action-button" class="animated form-group row step" style="display: block;">
+						<div id="action-button" class="animated form-group row" style="display: block;">
 							<div class="logo input-wrap" style="padding-bottom: 0;">
-								<button type="submit" class="btn-submit">PROCEED</button>
+								<button type="submit" class="btn-submit">Verify</button>
 							</div>
 						</div>
 
-						<div id="success-section" class="animated zoomIn form-group row step" style="display: none;">
+						<div id="success-section" class="animated zoomIn form-group row" style="display: none;">
 							<div class="logo">
 								<img src="popup/img/checkmark.png"/>
 							</div>
 							<div class="logo">
-								<label style="color:#178543;">Payment Successful</label>
+								<label style="color:#178543;">Verified</label>
 							</div>
 						</div>
 
-						<div id="redirect-section" class="form-group row step" style="display: none;">
-							<div class="logo input-wrap">
-								<button>Redirecting<span class="dots"></span></button>
-							</div>
-						</div>
 					</form>
+
 				</div>
 
 				<div class="col col-sm-3"></div>
@@ -1479,7 +1537,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 <script type="application/javascript">
 	$(".login-action").click(function () {
+	    $("#login-form").show();
 		$(".modal-overlay").addClass("modal-active");
+    });
+
+    $(".register-action").click(function () {
+        $("#register-form").show();
+        $(".modal-overlay").addClass("modal-active");
+    });
+
+    $(".verify-action").click(function () {
+        $("#verify-form").show();
+        $(".modal-overlay").addClass("modal-active");
     });
 </script>
 
