@@ -20,7 +20,7 @@ div.content-wrapper{
 
 form.form-wrapper{
     padding-top: 10px;
-    padding-bottom: 1px;
+    padding-bottom: 0;
     padding-left: 10px;
     padding-right: 10px;
 }

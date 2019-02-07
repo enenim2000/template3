@@ -29,7 +29,7 @@ div.load-more{
 	left:0;
 	top:1px;
 	overflow:hidden;
-	background: rgba(0, 0, 0, .6) !important;
+	background: rgba(0, 0, 0, .7) !important;
 	text-align: center;
 	color: #fa9e1c;
 	display:none;
@@ -44,4 +44,9 @@ div.load-more{
 
 #noty_topRight_layout_container{
 	z-index:9999999999999999999999999999999999999 !important;
+}
+
+.modal-bottom-div{
+	text-align: center;
+	padding-bottom: 2px;
 }
