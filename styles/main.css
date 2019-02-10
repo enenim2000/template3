@@ -50,3 +50,16 @@ div.load-more{
 	text-align: center;
 	padding-bottom: 2px;
 }
+
+#modal-icon{
+	left: 59vw;
+	color:white;
+	top: 8vh;
+	background: linear-gradient(to right, rgb(101, 75, 202), rgb(242, 154, 26), rgb(101, 75, 202));
+	z-index: 999;
+	margin-right: 20px;
+	padding: 5px 8px 5px 8px;
+	border-radius: 100px;
+	position: fixed;
+	cursor: pointer;
+}
