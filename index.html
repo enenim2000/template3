@@ -52,7 +52,7 @@
 						<div class="user_box ml-auto">
 							<div class="user_box_login user_box_link"><a href="#" class="login-action">login</a></div>
 							<div class="user_box_login user_box_link"><a href="#" class="register-action">register</a></div>
-							<div class="user_box_register user_box_link"><a href="#" class="verify-action">dashboard</a></div>
+							<div class="user_box_register user_box_link"><a href="#">dashboard</a></div>
 						</div>
 					</div>
 				</div>
@@ -1460,7 +1460,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 						</div>
 
 						<div class="modal-bottom-div">
-							<span><a href="#">Verify Code?</a></span>
+							<span><a href="#" class="verify-action">Verify Code?</a></span>
 						</div>
 
 					</form>
@@ -1516,6 +1516,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 	</div>
 
+	<span id="modal-icon" class="modal-active animated slideInDown" onclick="hideModalComponents(); return false;"><i href="#" class="fa fa-times fa-2x"></i></span>
+
 </div>
 
 
@@ -1545,18 +1547,36 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 
 <script type="application/javascript">
+	function showModalCancel() {
+        $("#modal-icon").show();
+    }
+
+	function hideModalComponents() {
+        $("#login-form").hide();
+        $("#register-form").hide();
+        $("#verify-form").hide();
+        $("#modal-icon").hide();
+        $(".modal-overlay").removeClass("modal-active");
+    }
+
 	$(".login-action").click(function () {
+        hideModalComponents();
 	    $("#login-form").show();
+        showModalCancel();
 		$(".modal-overlay").addClass("modal-active");
     });
 
     $(".register-action").click(function () {
+        hideModalComponents();
         $("#register-form").show();
+        showModalCancel();
         $(".modal-overlay").addClass("modal-active");
     });
 
     $(".verify-action").click(function () {
+        hideModalComponents();
         $("#verify-form").show();
+        showModalCancel();
         $(".modal-overlay").addClass("modal-active");
     });
 </script>
