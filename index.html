@@ -1460,7 +1460,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 						</div>
 
 						<div class="modal-bottom-div">
-							<span><a href="#" class="verify-action">Verify Code?</a></span>
+							<span><a href="#" class="verify-action">Verify Code</a></span>
 						</div>
 
 					</form>
@@ -1479,7 +1479,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 							</div>
 
 							<div class="div-pin logo">
-								<div><input class="input-pin" maxlength="1" type="password" placeholder=""/></div>
+								<div><input class="input-pin" style="border-left: 1px solid #e8e8e8;" maxlength="1" type="password" placeholder=""/></div>
 								<div><input class="input-pin" maxlength="1" type="password" placeholder=""/></div>
 								<div><input class="input-pin" maxlength="1" type="password" placeholder=""/></div>
 								<div><input class="input-pin" maxlength="1" type="password" placeholder=""/></div>
@@ -1494,6 +1494,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 							</div>
 						</div>
 
+						<div class="modal-bottom-div">
+							<span><a href="#" class="resend-action">Resend Code</a></span>
+						</div>
+
 						<div id="success-section" class="animated zoomIn form-group row" style="display: none;">
 							<div class="logo">
 								<img src="popup/img/checkmark.png"/>
@@ -1501,6 +1505,36 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 							<div class="logo">
 								<label style="color:#178543;">Verified</label>
 							</div>
+						</div>
+
+					</form>
+
+					<form id="resend-form" class="animated slideInUp form-wrapper" style="display: none; background: rgb(255,255,255); padding: 10px 13px 0 13px; border-radius: 5px; border: 1px solid rgba(141,79,255,0.3);">
+
+						<div class="logo">
+							<span><img src="popup/img/etranzact-logo.png"/></span>
+						</div>
+
+						<br/>
+
+						<div id="resend-email" class="animated slideInUp form-group row" style="display: block;">
+							<div class="logo">
+								<label style="color:#8d4fff;">Email</label>
+							</div>
+
+							<div class="logo input-wrap">
+								<input name="email" type="text" class="input" placeholder="Enter email"/>
+							</div>
+						</div>
+
+						<div id="resend-button" class="animated form-group row" style="display: block; margin-bottom: 5px;">
+							<div class="logo input-wrap">
+								<button type="submit" class="btn-submit">Resend</button>
+							</div>
+						</div>
+
+						<div class="modal-bottom-div">
+							<span><a href="#" class="verify-action">Verify Code</a></span>
 						</div>
 
 					</form>
@@ -1555,6 +1589,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         $("#login-form").hide();
         $("#register-form").hide();
         $("#verify-form").hide();
+        $("#resend-form").hide();
         $("#modal-icon").hide();
         $(".modal-overlay").removeClass("modal-active");
     }
@@ -1576,6 +1611,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     $(".verify-action").click(function () {
         hideModalComponents();
         $("#verify-form").show();
+        showModalCancel();
+        $(".modal-overlay").addClass("modal-active");
+    });
+
+    $(".resend-action").click(function () {
+        hideModalComponents();
+        $("#resend-form").show();
         showModalCancel();
         $(".modal-overlay").addClass("modal-active");
     });

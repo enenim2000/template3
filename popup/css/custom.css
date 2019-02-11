@@ -95,6 +95,7 @@ input.input-pin{
     padding-right: 0!important;
     padding-left: 0!important;
     border: 1px solid #e8e8e8;
+    border-left-width: 0;
 }
 
 .logo{
