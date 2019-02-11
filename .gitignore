@@ -24,3 +24,4 @@ dist/*
 !bootstrap/dist/
 /nbdist/
 /.nb-gradle/
+workspace.xml
