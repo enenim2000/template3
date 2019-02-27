@@ -31,7 +31,7 @@
 	
 	<!-- Header -->
 
-	<header class="header">
+	<header class="header" id="home-section">
 
 		<!-- Top Bar -->
 
@@ -66,15 +66,15 @@
 				<div class="row">
 					<div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
 						<div class="logo_container">
-							<div class="logo"><a href="#"><img style="width:200px; height: 100px;" src="images/curexzone-logo.jpg" alt=""></a></div>
+							<div class="logo"><a href="#"><img style="width:200px; height: 100px;" src="images/logo.png" alt=""></a></div>
 						</div>
 						<div class="main_nav_container ml-auto">
 							<ul class="main_nav_list">
-								<li class="main_nav_item"><a href="#">home</a></li>
-								<li class="main_nav_item"><a href="about.html">about us</a></li>
-								<li class="main_nav_item"><a href="offers.html">services</a></li>
-								<li class="main_nav_item"><a href="blog.html">faq</a></li>
-								<li class="main_nav_item"><a href="contact.html">contact</a></li>
+								<li class="main_nav_item"><a href="#" onclick="scrollHomeSection()">home</a></li>
+								<li class="main_nav_item"><a href="#" onclick="scrollAboutSection()">about us</a></li>
+								<li class="main_nav_item"><a href="#" onclick="scrollServiceSection()">services</a></li>
+								<li class="main_nav_item"><a href="#" onclick="scrollFAQSection()">faq</a></li>
+								<li class="main_nav_item"><a href="#" onclick="scrollContactSection()">contact</a></li>
 							</ul>
 						</div>
 						<div class="content_search ml-lg-0 ml-auto">
@@ -120,11 +120,11 @@
 			<div class="menu_close_container"><div class="menu_close"></div></div>
 			<div class="logo menu_logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
 			<ul>
-				<li class="menu_item"><a href="#">home</a></li>
-				<li class="menu_item"><a href="about.html">about us</a></li>
-				<li class="menu_item"><a href="offers.html">services</a></li>
-				<li class="menu_item"><a href="blog.html">faq</a></li>
-				<li class="menu_item"><a href="contact.html">contact</a></li>
+				<li class="menu_item"><a href="#" onclick="scrollHomeSection();">home</a></li>
+				<li class="menu_item"><a href="#" onclick="scrollAboutSection();">about us</a></li>
+				<li class="menu_item"><a href="#" onclick="scrollServiceSection();">services</a></li>
+				<li class="menu_item"><a href="#" onclick="scrollFAQSection();">faq</a></li>
+				<li class="menu_item"><a href="#" onclick="scrollContactSection();">contact</a></li>
 			</ul>
 		</div>
 	</div>
@@ -142,12 +142,12 @@
 				<!-- Slider Item -->
 				<div id="owl-item" class="owl-item home_slider_item">
 					<!-- Image by https://unsplash.com/@anikindimitry -->
-					<div class="home_slider_background" style="background-image:url(images/home_slider.jpg)"></div>
+					<div class="home_slider_background" style="background-image:url(images/home_slider1.jpg)"></div>
 
 					<div class="home_slider_content text-center">
 						<div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
-							<h1>Transfer</h1>
-							<h1>currency</h1>
+							<!--<h1>Transfer</h1>
+							<h1>currency</h1>-->
 							<div class="button home_slider_button"><div class="button_bcg"></div><a href="#">explore now<span></span><span></span><span></span></a></div>
 						</div>
 					</div>
@@ -155,12 +155,12 @@
 
 				<!-- Slider Item -->
 				<div class="owl-item home_slider_item">
-					<div class="home_slider_background" style="background-image:url(images/home_slider.jpg)"></div>
+					<div class="home_slider_background" style="background-image:url(images/home_slider2.jpg)"></div>
 
 					<div class="home_slider_content text-center">
 						<div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
-							<h1>Sell</h1>
-							<h1>currencies </h1>
+							<!--<h1>Sell</h1>
+							<h1>currencies </h1>-->
 							<div class="button home_slider_button"><div class="button_bcg"></div><a href="#">explore now<span></span><span></span><span></span></a></div>
 						</div>
 					</div>
@@ -168,12 +168,25 @@
 
 				<!-- Slider Item -->
 				<div class="owl-item home_slider_item">
-					<div class="home_slider_background" style="background-image:url(images/home_slider.jpg)"></div>
+					<div class="home_slider_background" style="background-image:url(images/home_slider3.jpg)"></div>
 
 					<div class="home_slider_content text-center">
 						<div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
-							<h1>Exchange</h1>
-							<h1>Goods</h1>
+							<!--<h1>Exchange</h1>
+							<h1>Goods</h1>-->
+							<div class="button home_slider_button"><div class="button_bcg"></div><a href="#">explore now<span></span><span></span><span></span></a></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Slider Item -->
+				<div class="owl-item home_slider_item">
+					<div class="home_slider_background" style="background-image:url(images/home_slider4.jpg)"></div>
+
+					<div class="home_slider_content text-center">
+						<div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
+							<!--<h1>Exchange</h1>
+							<h1>Goods</h1>-->
 							<div class="button home_slider_button"><div class="button_bcg"></div><a href="#">explore now<span></span><span></span><span></span></a></div>
 						</div>
 					</div>
@@ -1024,7 +1037,7 @@
 
 	<!-- Testimonials -->
 
-	<div class="testimonials">
+	<div class="testimonials" id="service-section">
 		<div class="test_border"></div>
 		<div class="container">
 			<div class="row">
@@ -1043,8 +1056,8 @@
 							<!-- Testimonial Item -->
 							<div class="owl-item">
 								<div class="test_item">
-									<div class="test_image"><img src="images/test_1.jpg" alt="https://unsplash.com/@anniegray"></div>
-									<div class="test_icon"><img src="images/backpack.png" alt=""></div>
+									<div class="test_image"><img src="images/fund-transfer.jpg" alt="https://unsplash.com/@anniegray"></div>
+									<div class="test_icon"><img src="images/transfer-icon.png" alt=""></div>
 									<div class="test_content_container">
 										<div class="test_content">
 											<div class="test_item_info">
@@ -1061,8 +1074,8 @@
 							<!-- Testimonial Item -->
 							<div class="owl-item">
 								<div class="test_item">
-									<div class="test_image"><img src="images/test_3.jpg" alt="https://unsplash.com/@seefromthesky"></div>
-									<div class="test_icon"><img src="images/kayak.png" alt=""></div>
+									<div class="test_image"><img src="images/bureau-de-change.jpg" alt="https://unsplash.com/@seefromthesky"></div>
+									<div class="test_icon"><img src="images/change-icon.png" alt=""></div>
 									<div class="test_content_container">
 										<div class="test_content">
 											<div class="test_item_info">
@@ -1077,9 +1090,9 @@
 							</div>
 
 							<!-- Testimonial Item -->
-							<div class="owl-item">
+							<!--<div class="owl-item">
 								<div class="test_item">
-									<div class="test_image"><img src="images/test_2.jpg" alt="https://unsplash.com/@tschax"></div>
+									<div class="test_image"><img src="images/test_3.jpg" alt="https://unsplash.com/@tschax"></div>
 									<div class="test_icon"><img src="images/island_t.png" alt=""></div>
 									<div class="test_content_container">
 										<div class="test_content">
@@ -1093,12 +1106,12 @@
 									</div>
 								</div>
 							</div>
-
+-->
 							<!-- Testimonial Item -->
 							<div class="owl-item">
 								<div class="test_item">
-									<div class="test_image"><img src="images/test_2.jpg" alt=""></div>
-									<div class="test_icon"><img src="images/island_t.png" alt=""></div>
+									<div class="test_image"><img src="images/bitcoin.jpg" alt=""></div>
+									<div class="test_icon"><img src="images/bitcoin-icon.png" alt=""></div>
 									<div class="test_content_container">
 										<div class="test_content">
 											<div class="test_item_info">
@@ -1115,8 +1128,8 @@
 							<!-- Testimonial Item -->
 							<div class="owl-item">
 								<div class="test_item">
-									<div class="test_image"><img src="images/test_1.jpg" alt=""></div>
-									<div class="test_icon"><img src="images/backpack.png" alt=""></div>
+									<div class="test_image"><img src="images/barter.jpg" alt=""></div>
+									<div class="test_icon"><img src="images/barter-icon.png" alt=""></div>
 									<div class="test_content_container">
 										<div class="test_content">
 											<div class="test_item_info">
@@ -1177,9 +1190,9 @@
 	</div>
 
 	<div class="contact">
-		<div class="contact_background" style="background-image:url(images/contact.png)"></div>
+		<div class="contact_background" style="background-image:url(images/man.jpg)"></div>
 
-		<div class="container">
+		<div class="container" id="contact-section">
 			<div class="row">
 				<div class="col-lg-5">
 					<div class="contact_image">
@@ -1213,7 +1226,7 @@
 					<div class="footer_col">
 						<div class="footer_content footer_about">
 							<div class="logo_container footer_logo">
-								<div class="logo"><a href="#"><img src="images/logo.png" alt=""/></a></div>
+								<div class="logo"><a href="#"><img style="width: 200px; height: 100px;" src="images/logo.png" alt=""/></a></div>
 							</div>
 							<p class="footer_about_text"><span class="app_name"></span> is a global exchange solution. It offers exchange of one currency to the other, it offers digital currency exchange, and exchange of goods. It is highly secured.</p>
 							<ul class="footer_social_list">
@@ -1346,11 +1359,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					<div class="footer_nav_container d-flex flex-row align-items-center justify-content-lg-end">
 						<div class="footer_nav">
 							<ul class="footer_nav_list">
-								<li class="footer_nav_item"><a href="#">home</a></li>
-								<li class="footer_nav_item"><a href="about.html">about us</a></li>
-								<li class="footer_nav_item"><a href="offers.html">services</a></li>
-								<li class="footer_nav_item"><a href="blog.html">faq</a></li>
-								<li class="footer_nav_item"><a href="contact.html">contact</a></li>
+								<li class="footer_nav_item"><a href="#" onclick="scrollHomeSection()">home</a></li>
+								<li class="footer_nav_item"><a href="#" onclick="scrollAboutSection()">about us</a></li>
+								<li class="footer_nav_item"><a href="#" onclick="scrollServiceSection()">services</a></li>
+								<li class="footer_nav_item"><a href="#" onclick="scrollFAQSection()">faq</a></li>
+								<li class="footer_nav_item"><a href="#" onclick="scrollContactSection()">contact</a></li>
 							</ul>
 						</div>
 					</div>
@@ -1375,13 +1388,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 				<div id="frame-container" class="col col-sm-6" style="display: block;">
 
-					<form id="login-form" class="animated slideInUp form-wrapper" style="display: none; background: rgb(255,255,255); padding: 10px 13px 0 13px; border-radius: 5px; border: 1px solid rgba(141,79,255,0.3);">
+					<form id="login-form" class="animated slideInUp form-wrapper">
 
-						<div class="logo">
-							<span><img src="popup/img/etranzact-logo.png"/></span>
+						<div class="logo logo-section">
+							<span><img src="images/logo.png"/></span>
 						</div>
-
-						<br/>
 
 						<div id="login-username" class="animated slideInUp form-group row" style="display: block;">
 							<div class="logo">
@@ -1389,7 +1400,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 							</div>
 
 							<div class="logo input-wrap">
-								<input name="username" class="input input-wrap" placeholder="Enter username"/>
+								<input name="username" class="input input-wrap" placeholder="Enter email"/>
 							</div>
 						</div>
 
@@ -1415,13 +1426,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 					</form>
 
-					<form id="register-form" class="animated slideInUp form-wrapper" style="display: none; background: rgb(255,255,255); padding: 10px 13px 0 13px; border-radius: 5px; border: 1px solid rgba(141,79,255,0.3);">
+					<form id="register-form" class="animated slideInUp form-wrapper">
 
-						<div class="logo">
-							<span><img src="popup/img/etranzact-logo.png"/></span>
+						<div class="logo logo-section">
+							<span><img src="images/logo.png"/></span>
 						</div>
-
-						<br/>
 
 						<div id="signup-email" class="animated slideInUp form-group row" style="display: block;">
 							<div class="logo">
@@ -1465,13 +1474,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 					</form>
 
-					<form id="verify-form" class="animated slideInUp form-wrapper" style="display: none; background: rgb(255,255,255); padding: 10px 13px 0 13px; border-radius: 5px; border: 1px solid rgba(141,79,255,0.3);">
+					<form id="verify-form" class="animated slideInUp form-wrapper">
 
-						<div class="logo">
-							<span><img src="popup/img/etranzact-logo.png"/></span>
+						<div class="logo logo-section">
+							<span><img src="images/logo.png"/></span>
 						</div>
-
-						<br/>
 
 						<div id="pin" class="animated slideInUp form-group" style="display: block;">
 							<div class="logo">
@@ -1509,13 +1516,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 					</form>
 
-					<form id="resend-form" class="animated slideInUp form-wrapper" style="display: none; background: rgb(255,255,255); padding: 10px 13px 0 13px; border-radius: 5px; border: 1px solid rgba(141,79,255,0.3);">
+					<form id="resend-form" class="animated slideInUp form-wrapper">
 
-						<div class="logo">
-							<span><img src="popup/img/etranzact-logo.png"/></span>
+						<div class="logo logo-section">
+							<span><img src="images/logo.png"/></span>
 						</div>
-
-						<br/>
 
 						<div id="resend-email" class="animated slideInUp form-group row" style="display: block;">
 							<div class="logo">
@@ -1576,6 +1581,26 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script type="application/javascript">
 	function scrollComponentView() {
         document.getElementById("component-view").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    }
+
+    function scrollAboutSection() {
+        document.getElementById("about-section").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    }
+
+    function scrollFAQSection() {
+        document.getElementById("faq-section").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    }
+
+    function scrollContactSection() {
+        document.getElementById("contact-section").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    }
+
+    function scrollServiceSection() {
+        document.getElementById("service-section").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    }
+
+    function scrollHomeSection() {
+        document.getElementById("home-section").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
     }
 </script>
 

@@ -13,16 +13,17 @@ div.content-wrapper-parent{
 
 div.content-wrapper{
     background: transparent;
-    border: 1px solid #8d4fff;
+    border: 1px solid #a3a5ff;
     min-height: 200px;
     border-radius: 2px;
 }
 
 form.form-wrapper{
-    padding-top: 10px;
-    padding-bottom: 0;
-    padding-left: 10px;
-    padding-right: 10px;
+    display: none;
+    background: rgb(255,255,255);
+    padding: 0 13px 0 13px;
+    border-radius: 5px;
+    border: 1px solid rgba(141,79,255,0.3);
 }
 
 .btn-submit, div#redirect-section div button {
@@ -101,6 +102,15 @@ input.input-pin{
 .logo{
     display: flex;
     justify-content: center;
+}
+
+.logo-section{
+    margin-bottom: 5px;
+}
+
+.logo-section > span > img{
+    width: 236px;
+    height: 66px;
 }
 
 div.div-pin > div{
