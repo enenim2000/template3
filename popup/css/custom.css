@@ -109,8 +109,13 @@ input.input-pin{
 }
 
 .logo-section > span > img{
-    width: 236px;
-    height: 66px;
+    width: 216px;
+    height: 62px;
+}
+
+img.main-logo{
+    width: 200px;
+    height: 56px;
 }
 
 div.div-pin > div{
@@ -123,6 +128,18 @@ div.div-pin > div{
     z-index: 999;
     position: fixed;
     right: 45vw;
+}
+
+ul.main_nav_list li.main_nav_item a{
+    cursor: pointer;
+}
+
+div.menu_content ul li.menu_item a{
+    cursor: pointer;
+}
+
+div.footer_nav ul.footer_nav_list li.footer_nav_item a{
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
