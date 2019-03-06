@@ -35,11 +35,6 @@ form.form-wrapper{
     -o-transition: all 400ms ease;
     transition: all 400ms ease;
 
-
-
-
-
-
     font-size: 13px;
     font-weight: bold;
     width: 100%;
@@ -140,6 +135,16 @@ div.menu_content ul li.menu_item a{
 
 div.footer_nav ul.footer_nav_list li.footer_nav_item a{
     cursor: pointer;
+}
+
+div.faq-list{
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+div.faq-list h4{
+    color: #767d83;
+    text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
