@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0827f82e-12d7-4812-bfd3-cd830e822fc9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bus.png" afterPath="$PROJECT_DIR$/images/bus.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/cruise.png" afterPath="$PROJECT_DIR$/images/cruise.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/departure.png" afterPath="$PROJECT_DIR$/images/departure.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/island.png" afterPath="$PROJECT_DIR$/images/island.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/suitcase.png" afterPath="$PROJECT_DIR$/images/suitcase.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/popup/css/custom.css" afterPath="$PROJECT_DIR$/popup/css/custom.css" />
-    </list>
+    <list default="true" id="0827f82e-12d7-4812-bfd3-cd830e822fc9" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -469,12 +460,12 @@
       <workItem from="1550782823022" duration="595000" />
       <workItem from="1550870382219" duration="598000" />
       <workItem from="1550928691727" duration="17847000" />
-      <workItem from="1551816702082" duration="9775000" />
+      <workItem from="1551816702082" duration="10422000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117745000" />
+    <option name="totallyTimeSpent" value="118392000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1056" extended-state="0" />
