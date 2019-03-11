@@ -13,16 +13,17 @@ div.content-wrapper-parent{
 
 div.content-wrapper{
     background: transparent;
-    border: 1px solid #8d4fff;
+    border: 1px solid #a3a5ff;
     min-height: 200px;
     border-radius: 2px;
 }
 
 form.form-wrapper{
-    padding-top: 10px;
-    padding-bottom: 0;
-    padding-left: 10px;
-    padding-right: 10px;
+    display: none;
+    background: rgb(255,255,255);
+    padding: 0 13px 0 13px;
+    border-radius: 5px;
+    border: 1px solid rgba(141,79,255,0.3);
 }
 
 .btn-submit, div#redirect-section div button {
@@ -33,11 +34,6 @@ form.form-wrapper{
     -ms-transition: all 400ms ease;
     -o-transition: all 400ms ease;
     transition: all 400ms ease;
-
-
-
-
-
 
     font-size: 13px;
     font-weight: bold;
@@ -95,11 +91,26 @@ input.input-pin{
     padding-right: 0!important;
     padding-left: 0!important;
     border: 1px solid #e8e8e8;
+    border-left-width: 0;
 }
 
 .logo{
     display: flex;
     justify-content: center;
+}
+
+.logo-section{
+    margin-bottom: 13px;
+}
+
+.logo-section > span > img{
+    width: 216px;
+    height: 62px;
+}
+
+img.main-logo{
+    width: 200px;
+    height: 56px;
 }
 
 div.div-pin > div{
@@ -112,6 +123,28 @@ div.div-pin > div{
     z-index: 999;
     position: fixed;
     right: 45vw;
+}
+
+ul.main_nav_list li.main_nav_item a{
+    cursor: pointer;
+}
+
+div.menu_content ul li.menu_item a{
+    cursor: pointer;
+}
+
+div.footer_nav ul.footer_nav_list li.footer_nav_item a{
+    cursor: pointer;
+}
+
+div.faq-list{
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+div.faq-list h4{
+    color: #767d83;
+    text-align: center;
 }
 
 @media only screen and (max-width: 768px) {

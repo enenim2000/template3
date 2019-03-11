@@ -52,7 +52,7 @@ div.load-more{
 }
 
 #modal-icon{
-	left: 59vw;
+	left: 58.8vw;
 	color:white;
 	top: 8vh;
 	background: linear-gradient(to right, rgb(101, 75, 202), rgb(242, 154, 26), rgb(101, 75, 202));
@@ -62,4 +62,8 @@ div.load-more{
 	border-radius: 100px;
 	position: fixed;
 	cursor: pointer;
+}
+
+#modal-icon:hover{
+	background: linear-gradient(to right, rgb(242, 154, 26), rgb(101, 75, 202), rgb(242, 154, 26));
 }
