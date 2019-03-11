@@ -142,6 +142,14 @@ div.faq-list{
     padding-bottom: 10px;
 }
 
+div.trending_title a, div.trending_location, div.trending_price{
+    font-size: 13px;
+}
+
+div.trending_content{
+    padding-top: 5px;
+}
+
 div.faq-list h4{
     color: #767d83;
     text-align: center;

@@ -230,3 +230,21 @@ $(function() {
     // start again
     $el.trigger('startDotAnimation');
 });
+
+$("div.search_tabs div.search_tab").on("click", function(i, e){
+
+    if($(this).hasClass("active")){
+        $(this).find('img').each(function (i, img) {
+            if($(img).hasAttr("id")){
+                $(img).attr("src", "images/" + $(img).attr("id") + "2.png")
+            }
+        });
+    }else {
+        $(this).find('img').each(function (i, img) {
+            if($(img).hasAttr("id")){
+                $(img).attr("src", "images/" + $(img).attr("id") + ".png")
+            }
+        });
+    }
+
+});
