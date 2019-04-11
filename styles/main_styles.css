@@ -309,13 +309,20 @@ section
 3. Header
 *********************************/
 
-.header
+/*.header
 {
 	position: fixed;
 	width: 100%;
 	background: rgba(54, 19, 84, 0.6);
 	z-index: 12;
+}*/
+.header {
+	position: fixed;
+	width: 100%;
+	background: rgba(54, 19, 84, 0.85);
+	z-index: 12;
 }
+
 .header.scrolled
 {
 	background: rgba(54, 19, 84, 0.85);
@@ -421,7 +428,8 @@ section
 }
 .main_nav_col
 {
-	height: 143px;
+	/*height: 143px;*/
+	height: 80px;
 	-webkit-transition: all 400ms ease;
 	-moz-transition: all 400ms ease;
 	-ms-transition: all 400ms ease;
@@ -430,7 +438,7 @@ section
 }
 .header.scrolled .main_nav_col
 {
-	height: 100px;
+	height: 80px;
 }
 
 /*********************************
