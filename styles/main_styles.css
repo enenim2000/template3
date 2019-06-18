@@ -426,25 +426,23 @@ section
 	height: 9px;
 	content: '';
 }
-.main_nav_col
+/*.main_nav_col
 {
-	/*height: 143px;*/
-	height: 80px;
+	height: 50px;
 	-webkit-transition: all 400ms ease;
 	-moz-transition: all 400ms ease;
 	-ms-transition: all 400ms ease;
 	-o-transition: all 400ms ease;
 	transition: all 400ms ease;
+}*/
+.main_nav_col {
+	height: 56px;
 }
 .header.scrolled .main_nav_col
 {
-	height: 80px;
+	height: 56px;
 }
-
-/*********************************
-3.2 Logo
-*********************************/
-
+/*
 .logo_container
 {
 	-webkit-transform: translateY(-6px);
@@ -460,7 +458,7 @@ section
 	-ms-transform: none;
 	-o-transform: none;
 	transform: none;
-}
+}*/
 .logo a
 {
 	font-family: 'Open Sans', sans-serif;

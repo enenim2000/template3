@@ -80,7 +80,14 @@ div.input-wrap {
 }
 
 input{
-    text-align:center!important;
+    text-align:center;
+}
+
+input#contact_form_name,
+input#contact_form_email,
+input#contact_form_subject,
+input#contact_form_message{
+    text-align:justify!important;
 }
 
 input.input-pin{
@@ -148,11 +155,16 @@ div.trending_title a, div.trending_location, div.trending_price{
 
 div.trending_content{
     padding-top: 5px;
+    font-size: 11px!important;
 }
 
 div.faq-list h4{
     color: #767d83;
     text-align: center;
+}
+
+span.fa-star, span.fa-star-half-empty, span.fa-star-half-o{
+    color: #fa9e1b;
 }
 
 @media only screen and (max-width: 768px) {

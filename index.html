@@ -22,6 +22,26 @@
 <link rel="stylesheet" type="text/css" href="popup/css/custom.css"/>
 <!-- Modal Popup Styles Ends-->
 
+	<style>
+		.dropdown {
+			position: relative;
+			display: inline-block;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 150px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			padding: 12px 16px;
+			z-index: 1;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+	</style>
 
 </head>
 
@@ -33,32 +53,6 @@
 
 	<header class="header">
 
-		<!-- Top Bar -->
-
-		<!--<div class="top_bar">
-			<div class="container">
-				<div class="row">
-					<div class="col d-flex flex-row">
-						<div class="phone phone_number"></div>
-						<div class="social">
-							<ul class="social_list">
-								<li class="social_list_item"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-								<li class="social_list_item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-								<li class="social_list_item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-								<li class="social_list_item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-								<li class="social_list_item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-							</ul>
-						</div>
-						<div class="user_box ml-auto">
-							<div class="user_box_login user_box_link"><a href="#" class="login-action">login</a></div>
-							<div class="user_box_login user_box_link"><a href="#" class="register-action">register</a></div>
-							<div class="user_box_register user_box_link"><a href="#">dashboard</a></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>-->
-
 <!-- Main Navigation -->
 
 		<nav class="main_nav">
@@ -66,24 +60,25 @@
 				<div class="row">
 					<div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
 						<div class="logo_container">
-							<div class="logo"><a href="#"><img class="main-logo" src="images/logo.png" alt=""></a></div>
+							<div class="logo" style="padding-top: 20px;"><a href="#"><img class="main-logo" style="width: 80px; height: 40px; margin-bottom:12px;" src="images/logo.png" alt=""></a></div>
 						</div>
 						<div class="main_nav_container ml-auto">
 							<ul class="main_nav_list">
-								<li class="main_nav_item"><a onclick="scrollHomeSection()" >home</a></li>
-								<li class="main_nav_item"><a onclick="scrollAboutSection()">about us</a></li>
-								<li class="main_nav_item"><a onclick="scrollFAQSection()">faq</a></li>
-								<li class="main_nav_item"><a onclick="scrollServiceSection()">services</a></li>
-								<li class="main_nav_item"><a onclick="scrollContactSection()">contact</a></li>
+								<li class="main_nav_item"><a onclick="scrollHomeSection()" ><span class="fa fa-home"></span> home</a></li>
+								<li class="main_nav_item"><a onclick="scrollAboutSection()"><span class="fa fa-info-circle"></span> about us</a></li>
+								<li class="main_nav_item"><a onclick="scrollFAQSection()"><span class="fa fa-support"></span> faq</a></li>
+								<li class="main_nav_item"><a onclick="scrollServiceSection()"><span class="fa fa-gift"></span> services</a></li>
+								<li class="main_nav_item"><a onclick="scrollContactSection()"><span class="fa fa-phone"></span> contact</a></li>
 							</ul>
 						</div>
-						<div class="content_search ml-lg-0 ml-auto">
-							<select>
-								<option>More</option>
-								<option>Dashboard</option>
-								<option>Profile</option>
-								<option>Logout</option>
-							</select>
+						<div class="dropdown">
+							<span style="font-weight: bold; font-size: 15px;"><i class="fa fa-user"></i> luther emmanuel</span>
+							<div class="dropdown-content">
+								<p><span class="dashboard-action" style="text-decoration: none; cursor: pointer;"><i class="fa fa-dashboard" style="color: #654BCA !important; "></i> Dashboard</span></p>
+								<p><span class="register-action" style="text-decoration: none; cursor: pointer;"><i class="fa fa-user-plus" style="color: #654BCA !important;"></i> Sign up</span></p>
+								<p><span class="login-action" style="text-decoration: none; cursor: pointer;"><i class="fa fa-sign-in" style="color: #654BCA !important;"></i> Sign in</span></p>
+								<p><span class="logout-action" style="text-decoration: none; cursor: pointer;"><i class="fa fa-sign-out" style="color: #654BCA !important;"></i> Sign out</span></p>
+							</div>
 						</div>
 
 
@@ -247,9 +242,9 @@
 						<div class="search_tabs d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
 							<div onclick="scrollComponentView();" class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img id="suitcase" style="width: 25px; height: 25px;" src="images/suitcase.png" alt=""><span>Transfer</span></div>
 							<div onclick="scrollComponentView();" class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img id="bus" style="width: 25px; height: 25px;" src="images/bus.png" alt="">Exchange</div>
-							<div onclick="scrollComponentView();" class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img id="departure" style="width: 35px; height: 35px;" src="images/departure.png" alt="">Merchants</div>
+							<!--<div onclick="scrollComponentView();" class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img id="departure" style="width: 35px; height: 35px;" src="images/departure.png" alt="">Merchants</div>-->
 							<div onclick="scrollComponentView();" class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img id="island" style="width: 25px; height: 25px;" src="images/island.png" alt="">Trade By Barter</div>
-							<div onclick="scrollComponentView();" class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img id="cruise" style="width: 30px; height: 30px;" src="images/cruise.png" alt="">Bitcoin</div>
+							<!--<div onclick="scrollComponentView();" class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img id="cruise" style="width: 30px; height: 30px;" src="images/cruise.png" alt="">Bitcoin</div>-->
 						</div>
 					</div>
 
@@ -259,9 +254,10 @@
 					<div class="search_panel active">
 
 						<form action="#" autocomplete="off" id="search_form_1" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
-							<div class="search_item" style="width: 25%;">
-								<div>Source Currency</div>
+							<div class="search_item" style="width: 25%; text-align: center">
+								<div>Which currency do you have?</div>
 								<select name="source_currency" id="source_currency" class="dropdown_item_select search_input">
+									<option>Select currency</option>
 									<option>Dollar</option>
 									<option>Pounds</option>
 									<option>Naira</option>
@@ -269,9 +265,10 @@
 								</select>
 							</div>
 
-							<div class="search_item" style="width: 25%;">
-								<div>Destination Currency</div>
+							<div class="search_item" style="width: 25%; text-align: center">
+								<div>Which currency do you need?</div>
 								<select name="destination_currency" id="destination_currency" class="dropdown_item_select search_input">
+									<option>Select currency</option>
 									<option>Dollar</option>
 									<option>Pounds</option>
 									<option>Naira</option>
@@ -279,9 +276,9 @@
 								</select>
 							</div>
 
-							<div class="search_item" style="width: 25%;">
-								<div>Amount ($)</div>
-								<input id="amount" type="text" class="amount search_input" placeholder="Amount">
+							<div class="search_item" style="width: 25%; text-align: center">
+								<div>How much do you need? ($)</div>
+								<input id="amount" type="number" class="amount search_input" placeholder="Amount">
 							</div>
 							<button class="button search_button">PROCEED<span></span><span></span><span></span></button>
 						</form>
@@ -291,33 +288,29 @@
 
 					<div class="search_panel">
 						<form action="#" id="search_form_2" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
-							<div class="search_item">
-								<div>destination</div>
-								<input type="text" class="destination search_input" required="required">
-							</div>
-							<div class="search_item">
-								<div>check in</div>
-								<input type="text" class="check_in search_input" placeholder="YYYY-MM-DD">
-							</div>
-							<div class="search_item">
-								<div>check out</div>
-								<input type="text" class="check_out search_input" placeholder="YYYY-MM-DD">
-							</div>
-							<div class="search_item">
-								<div>adults</div>
-								<select name="adults" id="adults_2" class="dropdown_item_select search_input">
-									<option>01</option>
-									<option>02</option>
-									<option>03</option>
+							<div class="search_item" style="width: 25%; text-align: center">
+								<div>Which currency do you have?</div>
+								<select name="source_exchange_currency" id="source_exchange_currency" class="dropdown_item_select search_input">
+									<option>Select currency</option>
+									<option>Dollar</option>
+									<option>Pounds</option>
+									<option>Naira</option>
+									<option>Euros</option>
 								</select>
 							</div>
-							<div class="search_item">
-								<div>children</div>
-								<select name="children" id="children_2" class="dropdown_item_select search_input">
-									<option>0</option>
-									<option>02</option>
-									<option>03</option>
+							<div class="search_item" style="width: 25%; text-align: center">
+								<div>Which currency do you need?</div>
+								<select name="destination_exchange_currency" id="destination_exchange_currency" class="dropdown_item_select search_input">
+									<option>Select currency</option>
+									<option>Dollar</option>
+									<option>Pounds</option>
+									<option>Naira</option>
+									<option>Euros</option>
 								</select>
+							</div>
+							<div class="search_item" style="width: 25%; text-align: center">
+								<div>How much do you need? ($)</div>
+								<input id="exchange_amount" type="number" class="amount search_input" placeholder="Amount">
 							</div>
 							<button class="button search_button">search<span></span><span></span><span></span></button>
 						</form>
@@ -327,32 +320,57 @@
 
 					<div class="search_panel">
 						<form action="#" id="search_form_3" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
-							<div class="search_item">
-								<div>destination</div>
-								<input type="text" class="destination search_input" required="required">
-							</div>
-							<div class="search_item">
-								<div>check in</div>
-								<input type="text" class="check_in search_input" placeholder="YYYY-MM-DD">
-							</div>
-							<div class="search_item">
-								<div>check out</div>
-								<input type="text" class="check_out search_input" placeholder="YYYY-MM-DD">
-							</div>
-							<div class="search_item">
-								<div>adults</div>
-								<select name="adults" id="adults_3" class="dropdown_item_select search_input">
-									<option>01</option>
-									<option>02</option>
-									<option>03</option>
+							<div class="search_item" style="width: 18%; text-align: center">
+								<div>What do you have?</div>
+								<select name="source_goods" id="source_goods" class="dropdown_item_select search_input">
+									<option>Select item category</option>
+									<option>Electronics</option>
+									<option>Mobile Phones & Tablets</option>
+									<option>Pets</option>
+									<option>Vehicles</option>
+									<option>Services</option>
+									<option>Equipment & Tools</option>
+									<option>Cash</option>
 								</select>
 							</div>
-							<div class="search_item">
-								<div>children</div>
-								<select name="children" id="children_3" class="dropdown_item_select search_input">
-									<option>0</option>
-									<option>02</option>
-									<option>03</option>
+							<div class="search_item" style="width: 18%; text-align: center">
+								<div>What do you need?</div>
+								<select name="destination_goods" id="destination_goods" class="dropdown_item_select search_input">
+									<option>Select item category</option>
+									<option>Electronics</option>
+									<option>Mobile Phones & Tablets</option>
+									<option>Pets</option>
+									<option>Vehicles</option>
+									<option>Services</option>
+									<option>Equipment & Tools</option>
+									<option>Cash</option>
+								</select>
+							</div>
+							<div class="search_item" style="width: 18%; text-align: center">
+								<div>Where do live?</div>
+								<select name="exchange_country" id="exchange_country" class="dropdown_item_select search_input">
+									<option>Select country</option>
+									<option>Nigeria</option>
+									<option>USA</option>
+									<option>UK</option>
+									<option>Sweden</option>
+									<option>Switzerland</option>
+									<option>Kenya</option>
+									<option>Canada</option>
+									<option>South Africa</option>
+								</select>
+							</div>
+							<div class="search_item" style="width: 25%; text-align: center">
+								<div>Which location do you prefer?</div>
+								<select name="exchange_location" id="exchange_location" class="dropdown_item_select search_input">
+									<option>Select preferred location</option>
+									<option>Lagos</option>
+									<option>Abuja</option>
+									<option>Ibadan</option>
+									<option>Uyo</option>
+									<option>Kano</option>
+									<option>Porthacourt</option>
+									<option>Onitsha</option>
 								</select>
 							</div>
 							<button class="button search_button">search<span></span><span></span><span></span></button>
@@ -406,7 +424,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col text-center">
-					<h2 class="section_title">Find Merchants</h2>
+					<h2 class="section_title">Searched Results</h2>
 				</div>
 			</div>
 			<div class="row trending_container">
@@ -418,7 +436,14 @@
 						<div class="trending_content">
 							<div class="trending_title"><a href="#">Luther Emmanuel</a></div>
 							<div class="trending_price">Rate 1$/N350</div>
-							<div class="trending_location">London, UK</div>
+							<div class="trending_location">Negotiable</div>
+							<div>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star-half-o"></span>
+								<span class="fa fa-star-o"></span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -430,7 +455,14 @@
 						<div class="trending_content">
 							<div class="trending_title"><a href="#">Jimoh Taiwo</a></div>
 							<div class="trending_price">Rate 1$/N330</div>
-							<div class="trending_location">Lagos, Nigeria</div>
+							<div class="trending_location">FIXED</div>
+							<div>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star-o"></span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -442,7 +474,14 @@
 						<div class="trending_content">
 							<div class="trending_title"><a href="#">Asukwo Bassey</a></div>
 							<div class="trending_price">Rate $1/N400</div>
-							<div class="trending_location">Chicago, US</div>
+							<div class="trending_location">NEGOTIABLE</div>
+							<div>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -454,7 +493,14 @@
 						<div class="trending_content">
 							<div class="trending_title"><a href="#">Lynda Poet</a></div>
 							<div class="trending_price">Rate 1$/N300</div>
-							<div class="trending_location">madrid, spain</div>
+							<div class="trending_location">NEGOTIABLE</div>
+							<div>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star-o"></span>
+								<span class="fa fa-star-o"></span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -466,7 +512,14 @@
 						<div class="trending_content">
 							<div class="trending_title"><a href="#">Tolani Ayo</a></div>
 							<div class="trending_price">Rate 1$/N300</div>
-							<div class="trending_location">madrid, spain</div>
+							<div class="trending_location">NEGOTIABLE</div>
+							<div>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star-o"></span>
+								<span class="fa fa-star-o"></span>
+								<span class="fa fa-star-o"></span>
+								<span class="fa fa-star-o"></span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -708,12 +761,32 @@
 								</div>
 
 								<div class="faq-list">
+									<h4>How do I register on curexzone?</h4>
+									<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec. Proin bibendum, augue faucibus tincidunt ultrices, tortor augue gravida lectus, et efficitur enim justo vel ligula.</h5>
+								</div>
+
+								<div class="faq-list">
 									<h4>How can I become a merchant on CurexZone?</h4>
 									<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec. Proin bibendum, augue faucibus tincidunt ultrices, tortor augue gravida lectus, et efficitur enim justo vel ligula.</h5>
 								</div>
 
 								<div class="faq-list">
 									<h4>Is there limit to amount I can exchange in a day?</h4>
+									<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec. Proin bibendum, augue faucibus tincidunt ultrices, tortor augue gravida lectus, et efficitur enim justo vel ligula.</h5>
+								</div>
+
+								<div class="faq-list">
+									<h4>How does fund transfer works on curexzone?</h4>
+									<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec. Proin bibendum, augue faucibus tincidunt ultrices, tortor augue gravida lectus, et efficitur enim justo vel ligula.</h5>
+								</div>
+
+								<div class="faq-list">
+									<h4>What can I exchange on curexzone?</h4>
+									<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec. Proin bibendum, augue faucibus tincidunt ultrices, tortor augue gravida lectus, et efficitur enim justo vel ligula.</h5>
+								</div>
+
+								<div class="faq-list">
+									<h4>How does fund transfer differs from currency exchange?</h4>
 									<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec. Proin bibendum, augue faucibus tincidunt ultrices, tortor augue gravida lectus, et efficitur enim justo vel ligula.</h5>
 								</div>
 
@@ -1146,7 +1219,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 				<div id="frame-container" class="col col-sm-6" style="display: block;">
 
-					<form id="login-form" class="animated slideInUp form-wrapper" autocomplete="off">
+					<form id="login-form" class="animated zoomIn form-wrapper" autocomplete="off">
 
 						<div class="logo logo-section">
 							<span><img src="images/logo-popup.png"/></span>
@@ -1184,7 +1257,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 					</form>
 
-					<form id="register-form" class="animated slideInUp form-wrapper" autocomplete="off">
+					<form id="register-form" class="animated zoomIn form-wrapper" autocomplete="off">
 
 						<div class="logo logo-section">
 							<span><img src="images/logo-popup.png"/></span>
@@ -1232,7 +1305,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 					</form>
 
-					<form id="verify-form" class="animated slideInUp form-wrapper" autocomplete="off">
+					<form id="verify-form" class="animated zoomIn form-wrapper" autocomplete="off">
 
 						<div class="logo logo-section">
 							<span><img src="images/logo-popup.png"/></span>
@@ -1274,7 +1347,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 					</form>
 
-					<form id="resend-form" class="animated slideInUp form-wrapper" autocomplete="off">
+					<form id="resend-form" class="animated zoomIn form-wrapper" autocomplete="off">
 
 						<div class="logo logo-section">
 							<span><img src="images/logo-popup.png"/></span>
@@ -1313,7 +1386,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 	</div>
 
-	<span id="modal-icon" class="modal-active animated slideInDown" onclick="hideModalComponents(); return false;"><i href="#" class="fa fa-times fa-2x"></i></span>
+	<span id="modal-icon" class="modal-active animated zoomIn" onclick="hideModalComponents(); return false;"><i href="#" class="fa fa-times fa-2x"></i></span>
 
 </div>
 
