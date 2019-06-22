@@ -1306,6 +1306,12 @@ section
 	padding-bottom: 116px;
 	background: linear-gradient(to right, #fa9e1b, #8d4fff);
 }
+
+.offers {
+	padding-top: 50px!important;
+	padding-bottom: 50px!important;
+}
+
 .cta_background
 {
 	position: absolute;
