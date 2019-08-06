@@ -1146,11 +1146,12 @@ section
 
 .section_title
 {
-	font-size: 30px;
-	font-weight: 700;
+	font-size: 13px;
+	font-weight: bold;
 	color: #2d2c2c;
 	margin-top: -8px;
 	text-transform: uppercase;
+	padding-right: 50px;
 }
 
 /*********************************
@@ -1729,7 +1730,7 @@ section
 }
 .trending_title a
 {
-	font-size: 16px;
+	font-size: 12px;
 	font-weight: 700;
 	color: #2d2c2c;
 	text-transform: uppercase;
@@ -1745,14 +1746,14 @@ section
 }
 .trending_price
 {
-	font-size: 14px;
+	font-size: 10px;
 	font-weight: 700;
 	color: #fa9e1b;
 	margin-top: 2px;
 }
 .trending_location
 {
-	font-size: 14px;
+	font-size: 10px;
 	font-weight: 400;
 	color: #929191;
 	text-transform: uppercase;
